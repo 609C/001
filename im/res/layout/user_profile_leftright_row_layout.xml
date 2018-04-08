@@ -1,0 +1,27 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/user_profile_item_btn"
+    android:paddingLeft="@dimen/user_profile_padding"
+    android:paddingRight="@dimen/user_profile_padding"
+    >
+
+    <TextView
+        android:id="@+id/settings_row_text"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+         style="@style/mUserProfileTextStyle"/>
+
+    <TextView
+        android:id="@+id/settings_row_text_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right"
+        android:gravity="center_vertical"
+        android:textColor="#316f9f"
+        android:textSize="@dimen/text_size_17" />
+
+	<include layout="@layout/diver_h"
+	     android:id="@+id/settings_row_divider"/>
+</FrameLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <!-- 聊天布局的左边 -->
+
+    <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/chat_iv_image_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/head_img1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/chat_tv_name_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/chat_iv_image_left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/chat_iv_image_left"
+            android:text=""
+            android:textColor="@color/public_black_6"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/left_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chat_tv_name_left"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/chat_iv_image_left"
+            android:background="@drawable/chat_blue_other" >
+
+            <TextView
+                android:id="@+id/chat_tv_time_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/chat_tv_content_left"
+                android:text=""
+                android:textColor="@color/public_black_6"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/chat_tv_content_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="2dp"
+                android:text=""
+                android:textColor="@color/public_black_6" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 聊天布局的右边 -->
+
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/chat_iv_image_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/head_img1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/chat_tv_name_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@id/chat_iv_image_right"
+            android:layout_toLeftOf="@id/chat_iv_image_right"
+            android:text=""
+            android:textColor="@color/public_black_6"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chat_tv_name_right"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/chat_iv_image_right"
+            android:background="@drawable/chat_gray_me" >
+
+            <TextView
+                android:id="@+id/chat_tv_time_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/chat_tv_content_right"
+                android:text=""
+                android:textColor="@color/public_black_6"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/chat_tv_content_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:lineSpacingExtra="2dp"
+                android:text=""
+                android:textColor="@color/public_black_6" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView 
+        android:id="@+id/txt_system_msg_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#636363"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"/>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sabd="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/messages_list_menu_search"
+        android:icon="@drawable/ic_ab_search"
+        android:title="@string/Search"
+        sabd:showAsAction="always|collapseActionView"
+        sabd:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <!-- <item
+        android:id="@+id/messages_list_menu_new_messages"
+        android:icon="@drawable/createmeeting"
+        android:title="@string/NewMessages"
+        sabd:showAsAction="always"/>
+
+    <item
+        android:id="@+id/messages_list_menu_new_chat"
+        android:title="@string/NewGroup"
+        sabd:showAsAction="never"/>-->
+    <!-- 
+    <item
+        android:id="@+id/messages_list_menu_messages"
+        android:title="@string/Chats"
+        sabd:showAsAction="never"/>
+    
+    <item
+        android:id="@+id/messages_list_menu_meeting"
+        android:title="@string/Meeting"
+        sabd:showAsAction="never"/>
+    
+    <item
+        android:id="@+id/messages_list_menu_discuss"
+        android:title="@string/Discuss"
+        sabd:showAsAction="never"/>
+ 	-->
+    <!-- <item
+        android:id="@+id/messages_list_menu_settings"
+        android:title="@string/Settings"
+        sabd:showAsAction="never"/>-->
+    
+</menu>

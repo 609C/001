@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="info.emm.im.directsending.RangeDirect_Fragment" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/rangemeeting_ll"
+                android:layout_marginTop="15dp" >
+
+                <ImageView
+                    style="@style/rangemeeting_iv"
+                    android:src="@drawable/img_meetingtopic" />
+
+                <TextView
+                    android:id="@+id/rangedirect_title_tv"
+                    style="@style/rangemeeting_tv"
+                    android:text="@string/direct_topic" />
+
+                <EditText
+                    android:id="@+id/rangedirect_topic_et"
+                    style="@style/rangemeeting_right_layout"
+                    android:background="@null"
+                    android:singleLine="true" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rangedirect_startdate_ll"
+                style="@style/rangemeeting_ll" >
+
+                <ImageView
+                    style="@style/rangemeeting_iv"
+                    android:src="@drawable/img_startdate" />
+
+                <TextView
+                    style="@style/rangemeeting_tv"
+                    android:text="@string/startdate" />
+
+                <TextView
+                    android:id="@+id/rangedirect_startdate_tv"
+                    style="@style/rangemeeting_right_layout" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/rangemeeting_ll" >
+
+                <ImageView
+                    style="@style/rangemeeting_iv"
+                    android:src="@drawable/img_starttime" />
+
+                <TextView
+                    style="@style/rangemeeting_tv"
+                    android:text="@string/direct_start_time" />
+
+                <TextView
+                    android:id="@+id/rangedirect_starttime_tv"
+                    style="@style/rangemeeting_right_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rangedirect_pwd_ll"
+                style="@style/rangemeeting_ll"
+                android:visibility="gone" >
+
+                <ImageView
+                    style="@style/rangemeeting_iv"
+                    android:src="@drawable/password" />
+
+                <TextView
+                    android:id="@+id/rangedirect_pwd_tv"
+                    style="@style/rangemeeting_tv"
+                    android:text="@string/direct_pwd" />
+
+                <EditText
+                    android:id="@+id/rangedirect_pwd_et"
+                    style="@style/rangemeeting_right_layout"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:hint="@string/choose_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rangedirect_type_ll"
+                style="@style/rangemeeting_ll" >
+
+                <ImageView
+                    style="@style/rangemeeting_iv"
+                    android:src="@drawable/password" />
+
+                <TextView
+                    style="@style/rangemeeting_tv"
+                    android:text="@string/direct_type" />
+
+                <TextView
+                    android:id="@+id/rangedirect_type_tv"
+                    style="@style/rangemeeting_right_layout"
+                    android:background="@null" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rangedirect_attend_ll"
+                style="@style/rangemeeting_ll"
+                android:visibility="gone" >
+
+                <ImageView
+                    style="@style/rangemeeting_iv"
+                    android:src="@drawable/img_attend_meeting" />
+
+                <TextView
+                    android:id="@+id/rangedirect_attend_tv"
+                    style="@style/rangemeeting_tv"
+                    android:text="@string/attend_meeting_member" />
+
+                <TextView
+                    android:id="@+id/rangedirect_attend_num_tv"
+                    style="@style/rangemeeting_right_layout" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rangedirect_sending_tv"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="#2AB2F1"
+                android:gravity="center"
+                android:text="@string/range_direct"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

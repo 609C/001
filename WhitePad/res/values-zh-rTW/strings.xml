@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="string_loading_pic">正在加載圖片&#8230;</string>
+    <string name="string_pad_noaction">暫時沒有人共亯檔案</string>
+    <string name="sure">確定</string>
+    <string name="cancel">取消</string>
+    <string name="line_width">線條寬度</string>
+    <string name="entry_content">請輸入內容</string>
+     <string name="markpen">熒光筆</string>
+    <string name="line">直線</string>
+    <string name="arrowline">箭頭</string>
+    <string name="rectangle">矩形</string>
+    <string name="ellipse">橢圓</string>
+    <string name="text">文本</string>
+    <string name="color">顏色</string>
+    <string name="clear">清除</string>
+    <string name="reminder_message">取消工具欄，可進行其他操作</string>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <info.emm.forum.widget.MultiColumnListView
+        xmlns:pla="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/list"
+        android:layout_width="240dp"
+        android:layout_height="fill_parent"
+        pla:plaColumnNumber="3"
+        pla:plaLandscapeColumnNumber="3" >
+    </info.emm.forum.widget.MultiColumnListView>
+
+</ScrollView>

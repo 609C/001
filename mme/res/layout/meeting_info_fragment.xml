@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0EEEE"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/meeint_info_sc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <RelativeLayout style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/str_start_time" />
+
+                    <TextView
+                        android:id="@+id/in_start_time"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View style="@style/public_line_view" />
+
+                <RelativeLayout style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/str_meet_name" />
+
+                    <TextView
+                        android:id="@+id/in_meet_name"
+                        style="@style/meetinginfo_and_meetingdetails_tv"
+                        android:gravity="right"
+                        android:maxWidth="200dp" />
+                </RelativeLayout>
+
+                <View style="@style/public_line_view" />
+
+                <RelativeLayout style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/str_meet_number" />
+
+                    <TextView
+                        android:id="@+id/in_meet_id"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View style="@style/public_line_view" />
+
+                <RelativeLayout style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/meet_time" />
+
+                    <TextView
+                        android:id="@+id/in_meet_time"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View style="@style/public_line_view" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_chairmanpwd"
+                    style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/txt_chairmanpwd" />
+
+                    <TextView
+                        android:id="@+id/chairmanpwd"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/v_chairmanpwd"
+                    style="@style/public_line_view" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_confuserpwd"
+                    style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/attend_password" />
+
+                    <TextView
+                        android:id="@+id/confuserpwd"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/v_confuserpwd"
+                    style="@style/public_line_view" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_sidelineuserpwd"
+                    style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/live_password" />
+
+                    <TextView
+                        android:id="@+id/sidelineuserpwd"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/v_sidelineuserpwd"
+                    style="@style/public_line_view" />
+
+                <RelativeLayout
+                    android:id="@+id/meeting_info_meetingtype_rl"
+                    style="@style/meetinginfo_and_meetingdetails_rl"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/meetingtype" />
+
+                    <TextView
+                        android:id="@+id/meeting_info_meetingtype_tv"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/meeting_info_meetingtype_line"
+                    style="@style/public_line_view"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/meeting_info_attend_rl"
+                    style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/attend_meeting_member" />
+
+                    <TextView
+                        android:id="@+id/meeting_info_attend_num_tv"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/meeting_info_attend_line"
+                    style="@style/public_line_view" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <TextView
+                    android:id="@+id/in_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/button_color"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/meeting_start"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/in_invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#2FD8AE"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/invite"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+                <!--
+             <TextView 
+	        android:id="@+id/in_delete"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/delete_meet"
+	        android:gravity="center"
+	        android:background="#FFFFFF"
+	        android:padding="5dp"
+	        android:textSize="20dp"/>                -->
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/meeting_info_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone" >
+    </ListView>
+
+</LinearLayout>

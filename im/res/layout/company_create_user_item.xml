@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/user_profile_item_btn"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/user_head_padding"
+        android:paddingLeft="@dimen/user_profile_padding"
+        android:paddingRight="@dimen/user_profile_padding"
+        android:paddingTop="@dimen/user_head_padding" >
+
+        <info.emm.ui.Views.BackupImageView
+            android:id="@+id/settings_avatar_image"
+            android:layout_width="@dimen/user_head_size"
+            android:layout_height="@dimen/user_head_size"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/user_blue" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            style="@style/mTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip" />
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_edit" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/divider"
+        layout="@layout/diver_h"  />
+
+</LinearLayout>

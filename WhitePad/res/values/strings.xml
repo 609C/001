@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">WhitePad</string>
+    <string name="string_loading_pic">Downloading Image&#8230;</string>
+    <string name="string_pad_noaction">No one share the document for the time being</string>
+    <string name="insert_text">Please insert text</string>
+    <string name="insert_hint_et">Please insert content</string>
+    <string name="sure">Sure</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialog_color_OK">OK</string>
+    <string name="dialog_color_cancle">cancle</string>
+    <string name="line_width">Line width</string>
+    <string name="entry_content">Please entry content</string>
+    <string name="markpen">Marpen</string>
+    <string name="line">Line</string>
+    <string name="arrowline">ArrowLine</string>
+    <string name="rectangle">Rectsngle</string>
+    <string name="ellipse">Ellipse</string>
+    <string name="text">Text</string>
+    <string name="color">Color</string>
+    <string name="clear">Clear</string>
+    <string name="face_share_fragment_sync">Sync document</string>
+    <string name="share_pad">share_pad</string>
+	<string name="reminder_message">Cancel the toolbar, and other operations can be performed</string>
+    
+</resources>

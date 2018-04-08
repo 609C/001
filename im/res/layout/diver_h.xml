@@ -1,0 +1,4 @@
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+ 	    style="@style/mDiver_H_Style"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_gravity="bottom"  />

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager_meeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ly_tabbtns" />
+
+    <LinearLayout
+        android:id="@+id/ly_tabbtns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/main_tab_meeting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tab_text_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="0dp"
+                android:layout_marginBottom="5dp"
+                android:drawableTop="@drawable/bottom_tab_contacts_bg"
+                android:gravity="center_horizontal"
+                android:text="@string/meeting" />
+
+            <include layout="@layout/unread_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_tab_chats"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tab_text_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="0dp"
+                android:layout_marginBottom="5dp"
+                android:drawableTop="@drawable/bottom_tab_chats_bg"
+                android:gravity="center_horizontal"
+                android:text="@string/chat" />
+
+            <include layout="@layout/unread_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_tab_contacts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tab_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="0dp"
+                android:layout_marginBottom="5dp"
+                android:drawableTop="@drawable/bottom_tab_discuss_bg"
+                android:gravity="center_horizontal"
+                android:text="@string/contacts" />
+
+            <include layout="@layout/unread_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_tab_options"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tab_text_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="0dp"
+                android:drawableTop="@drawable/bottom_tab_meetings_bg"
+                android:gravity="center_horizontal"
+                android:text="@string/options" />
+
+            <include layout="@layout/unread_bg" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

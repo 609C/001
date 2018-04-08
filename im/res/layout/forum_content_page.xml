@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/forum_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/forum_empty_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/nopost"
+            android:textColor="#959595"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/forum_main_page_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/forum_main_mennu"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="#f7f7f7"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/bt_dropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_cata_all_n" />
+
+            <TextView
+                android:id="@+id/tv_value"
+                android:layout_width="120dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:minHeight="30dp"
+                android:textColor="#99000000"
+                android:textSize="16sp" />
+            <!-- android:background="@drawable/edittext1" -->
+
+            <LinearLayout
+                android:layout_width="120dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/forum_home_page_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:clickable="true"
+                    android:gravity="center_vertical|center"
+                    android:maxLines="1"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:text="@string/CreateDiscus"
+                    android:textColor="#99000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <info.emm.forum.widget.PullToRefreshListView
+            android:id="@+id/frame_listview_postlist"
+            style="@style/widget_listview" />
+    </LinearLayout>
+
+</FrameLayout>

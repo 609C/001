@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp" >
+
+        <info.emm.ui.Views.BackupImageView
+            android:id="@+id/iv_ic_mycompany"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/company_icon" />
+
+        <TextView
+            android:id="@+id/tv_mycompany"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip"
+            android:text="@string/mycompany"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_arrowico"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dip"
+            android:src="@drawable/mm_submenu_normal" />
+
+    </LinearLayout>
+
+</LinearLayout>

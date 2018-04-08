@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:background="@drawable/user_profile_item_btn"
+     >
+    <!--android:background="@color/settings_background_color" -->
+
+    <ImageView
+        android:id="@+id/messages_list_row_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:scaleType="center"
+        android:src="@drawable/addmember" />
+
+    <TextView
+        android:id="@+id/messages_list_row_name"
+        style="@style/mUserProfileTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_marginLeft="60dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1" />
+
+    <View android:background="@color/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:id="@+id/settings_row_divider"/>
+</FrameLayout>

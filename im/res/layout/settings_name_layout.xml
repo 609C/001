@@ -1,0 +1,85 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/user_profile_padding"
+    android:paddingRight="@dimen/user_profile_padding"
+    android:paddingTop="@dimen/user_profile_padding"
+    android:background="#2AB2F1">
+
+    <FrameLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="@dimen/head_size_default"
+        android:layout_height="@dimen/head_size_default">
+
+        <info.emm.ui.Views.RoundBackupImageView
+            android:id="@+id/settings_avatar_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+        <ImageButton
+            android:id="@+id/settings_change_avatar_button"
+            android:background="@null"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:ellipsize="end"
+            android:id="@+id/settings_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:singleLine="true"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:textSize="14dp"
+            android:textColor="#999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:id="@+id/settings_online"
+            android:visibility="gone" />
+
+    </LinearLayout>
+	<TextView 
+	    android:id="@+id/txt_change_nickname"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/str_change_nickname"
+	    android:textSize="20sp"
+	    android:textColor="#FFFFFF"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="28dp"
+	    android:visibility="gone"/>
+   <!--  <View
+        android:id="@+id/divider"
+        android:background="@color/diver_vertical"
+        android:layout_width="1dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"/>
+
+    <ImageButton
+        android:id="@+id/settings_edit_name"
+        android:background="@drawable/list_selector"
+        android:clickable="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_edit"
+        android:layout_marginTop="4dp"/> -->
+
+</LinearLayout>

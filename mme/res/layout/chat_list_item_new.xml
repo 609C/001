@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal" >
+
+    <!-- 聊天布局的左边 -->
+
+    <TextView
+        android:id="@+id/chat_iv_image_left"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/head_img1"
+        android:gravity="center|center_vertical"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/chat_tv_name_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:shadowColor="#40000000"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="1"
+        android:text="我"
+        android:textColor="#EAC100"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/chat_tv_content_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:shadowColor="#40000000"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="1"
+        android:text="哈哈"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

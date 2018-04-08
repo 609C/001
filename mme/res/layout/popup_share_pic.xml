@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/public_white_transparent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/btn_take_photo"
+        style="@style/viewpager_pop_title"
+        android:text="@string/take_photo" />
+
+    <TextView
+        android:id="@+id/btn_select_form_folder"
+        style="@style/viewpager_pop_title"
+        android:text="@string/select_from_photo" />
+
+    <TextView
+        android:id="@+id/btn_share_doc"
+        style="@style/viewpager_pop_title"
+        android:paddingBottom="10dp"
+        android:text="@string/str_share_doc" />
+
+</LinearLayout>

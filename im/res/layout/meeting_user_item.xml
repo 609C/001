@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linlay_main_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        
+		<FrameLayout  
+            android:layout_width="@dimen/user_head_size"
+            android:layout_height="@dimen/user_head_size"
+        	android:orientation="vertical" > 
+        	
+        	<info.emm.ui.Views.BackupImageView
+            	android:id="@+id/settings_avatar_image"
+           	 	android:layout_width="@dimen/user_head_size"
+            	android:layout_height="@dimen/user_head_size"
+            	android:background="@drawable/user_blue" />
+        	<ImageView
+            	android:id="@+id/iv_status"
+            	android:layout_width="16dp"
+            	android:layout_height="16dp" 
+            	android:layout_gravity="bottom|right"/>
+        </FrameLayout>
+        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Phone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_action"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@drawable/create_new_object"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+     <include
+         android:id="@+id/divider"
+         layout="@layout/diver_h" />
+
+</LinearLayout>

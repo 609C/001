@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/public_white_transparent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_requestchairman"
+        style="@style/viewpager_pop_title"
+        android:text="@string/str_request_chairman" />
+
+    <TextView
+        android:id="@+id/txt_applyspeaker_tv"
+        style="@style/viewpager_pop_title"
+        android:text="@string/viewpager_apply_speaker" />
+
+    <TextView
+        android:id="@+id/txt_details"
+        style="@style/viewpager_pop_title"
+        android:text="@string/details" />
+
+    <TextView
+        android:id="@+id/txt_invite"
+        style="@style/viewpager_pop_title"
+        android:text="@string/invite" />
+
+    <TextView
+        android:id="@+id/txt_exit"
+        style="@style/viewpager_pop_title"
+        android:paddingBottom="10dp"
+        android:text="@string/exit" />
+
+</LinearLayout>

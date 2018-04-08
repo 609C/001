@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0EEEE"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/direct_details_sc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <RelativeLayout style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/direct_start_time" />
+
+                    <TextView
+                        android:id="@+id/direct_details_start_time_tv"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View style="@style/public_line_view" />
+
+                <RelativeLayout style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/direct_topic" />
+
+                    <TextView
+                        android:id="@+id/direct_details_name_tv"
+                        style="@style/meetinginfo_and_meetingdetails_tv"
+                        android:gravity="right"
+                        android:maxWidth="200dp" />
+                </RelativeLayout>
+
+                <View style="@style/public_line_view" />
+                
+                 <RelativeLayout style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/direct_id" />
+
+                    <TextView
+                        android:id="@+id/direct_details_id_tv"
+                        style="@style/meetinginfo_and_meetingdetails_tv"
+                        android:gravity="right"
+                        android:maxWidth="200dp" />
+                </RelativeLayout>
+
+                <View style="@style/public_line_view" />
+                
+                
+
+                <RelativeLayout 
+                    android:id="@+id/direct_details_pwd_rl"
+                    style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/direct_pwd" />
+
+                    <TextView
+                        android:id="@+id/direct_details_pwd_tv"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View 
+                    android:id="@+id/direct_details_pwd_view"
+                    style="@style/public_line_view" />
+
+                <RelativeLayout style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/direct_type" />
+
+                    <TextView
+                        android:id="@+id/direct_details_type_tv"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View style="@style/public_line_view" />
+                 <RelativeLayout
+                    android:id="@+id/direct_details_attend_rl"
+                    style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/attend_meeting_member" />
+
+                    <TextView
+                        android:id="@+id/direct_details_attend_num_tv"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View 
+                    android:id="@+id/direct_details_attend_line"
+                    style="@style/public_line_view" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <TextView
+                    android:id="@+id/direct_details_start_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/button_color"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/start_direct"
+                    android:textColor="#FFFFFF"
+                    android:textSize="21sp" />
+                
+                <TextView
+                    android:id="@+id/direct_details_invite_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/button_color"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/Invite"
+                    android:textColor="#FFFFFF"
+                    android:textSize="21sp" />
+                <TextView
+                    android:id="@+id/direct_details_play_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/button_color"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/DIR_Play_Back"
+                    android:textColor="#FFFFFF"
+                    android:textSize="21sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

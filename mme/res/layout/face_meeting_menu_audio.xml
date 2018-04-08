@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20aaaaaa"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_audio_mute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="静音" />
+
+    <Button
+        android:id="@+id/button_audio_unmute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="解除静音" />
+
+    <Button
+        android:id="@+id/button_audio_cut_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="断开" />
+
+    <Button
+        android:id="@+id/button_audio_net_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="网络连入" />
+
+    <Button
+        android:id="@+id/button_audio_tele_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="电话连入" />
+</LinearLayout>

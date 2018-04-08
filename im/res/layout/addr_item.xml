@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/user_profile_item_btn"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/contactitem_catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/user_profile_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="2dip"
+        android:paddingLeft="@dimen/user_profile_padding"
+        android:paddingTop="2dip"
+        android:textColor="#ee595c61"
+        android:textSize="@dimen/text_size_12"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/user_head_padding"
+        android:paddingLeft="@dimen/user_profile_padding"
+        android:paddingRight="@dimen/user_profile_padding"
+        android:paddingTop="@dimen/user_head_padding" >
+
+        <info.emm.ui.Views.RoundBackupImageView
+            android:id="@+id/settings_avatar_image"
+            android:layout_width="@dimen/user_head_size"
+            android:layout_height="@dimen/user_head_size"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/user_blue" />
+
+        <TextView
+            android:id="@+id/group_list_item_text"
+            style="@style/mTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/dialogs_badge"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/group_list_item_arrowico"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:src="@drawable/mm_submenu_normal"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_invite"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/Invite"
+            android:textColor="@color/convert_blue"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/divider"
+        layout="@layout/diver_h"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <com.weiyicloud.whitepad.PaintPad
+        android:id="@+id/PaintPad_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+            android:id="@+id/bottom_total_ll"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="#702f3a45"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true" >
+
+            <ImageView
+                android:id="@+id/total_iv"
+                style="@style/pen_type_ll"
+                android:layout_gravity="center"
+                android:src="@drawable/total_checked_img" />
+
+            <LinearLayout
+                android:id="@+id/markerpen_ll"
+                style="@style/pen_type_ll" >
+
+                <ImageView
+                    android:id="@+id/markerpen_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/markpen_img" />
+
+                <TextView
+                    style="@style/pen_type_text"
+                    android:text="@string/markpen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/arrowline_ll"
+                style="@style/pen_type_ll"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/arrowLine_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrowline_img" />
+
+                <TextView
+                    style="@style/pen_type_text"
+                    android:text="@string/arrowline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_ll"
+                style="@style/pen_type_ll" >
+
+                <ImageView
+                    android:id="@+id/line_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line_img" />
+
+                <TextView
+                    style="@style/pen_type_text"
+                    android:text="@string/line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rectangle_ll"
+                style="@style/pen_type_ll"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/rectangle_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_img" />
+
+                <TextView
+                    style="@style/pen_type_text"
+                    android:text="@string/rectangle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ellipse_ll"
+                style="@style/pen_type_ll"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/ellipse_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ellipse_img" />
+
+                <TextView
+                    style="@style/pen_type_text"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/ellipse" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_ll"
+                style="@style/pen_type_ll"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/text_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/text_img" />
+
+                <TextView
+                    style="@style/pen_type_text"
+                    android:text="@string/text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/color_ll"
+                style="@style/pen_type_ll" >
+
+                <ImageView
+                    android:id="@+id/color_iv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:src="@drawable/round_color_blank" />
+
+                <TextView
+                    style="@style/pen_type_text"
+                    android:text="@string/color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clear_ll"
+                style="@style/pen_type_ll" >
+
+                <ImageView
+                    android:id="@+id/clear_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/clear_img" />
+
+                <TextView
+                    style="@style/pen_type_text"
+                    android:text="@string/clear" />
+            </LinearLayout>
+        </LinearLayout>
+	<ImageView
+            android:id="@+id/total_big_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="60dp"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/total_img" />
+</RelativeLayout>

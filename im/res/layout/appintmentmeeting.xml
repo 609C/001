@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/user_profile_bg">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/user_profile_item_btn"
+        android:padding="@dimen/user_profile_padding" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/mUserProfileTextStyle"
+            android:text="设置预约时间" />
+
+        <TextView
+            android:id="@+id/tv_timeshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            style="@style/mUserProfileTextStyle"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        style="@style/mUserProfileTextStyle"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/user_profile_item_btn"
+        android:gravity="center"
+        android:text="确定" />
+	
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:id="@+id/meeint_info_sc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/public_blue_titel" >
+
+                <TextView
+                    android:id="@+id/meeting_detail_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/meeting_detailed"
+                    android:textSize="@dimen/text_size_20" />
+
+                <LinearLayout
+                    android:id="@+id/back_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="10dp"
+                    android:textSize="@dimen/text_size_16" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/back_arrow" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/back"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <RelativeLayout style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/str_start_time" />
+
+                    <TextView
+                        android:id="@+id/in_start_time"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View style="@style/public_line_view" />
+
+                <RelativeLayout style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/str_meet_name" />
+
+                    <TextView
+                        android:id="@+id/in_meet_name"
+                        style="@style/meetinginfo_and_meetingdetails_tv"
+                        android:gravity="right"
+                        android:maxWidth="200dp" />
+                </RelativeLayout>
+
+                <View style="@style/public_line_view" />
+
+                <RelativeLayout style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/str_meet_number" />
+
+                    <TextView
+                        android:id="@+id/in_meet_id"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View style="@style/public_line_view" />
+
+                <RelativeLayout style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/meet_time" />
+
+                    <TextView
+                        android:id="@+id/in_meet_time"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View style="@style/public_line_view" />
+				<!-- xiaoyang 会诊中隐藏主席密码-->
+                <RelativeLayout
+                    android:id="@+id/rel_chairmanpwd"
+                    android:visibility="gone"
+                    style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/txt_chairmanpwd" />
+
+                    <TextView
+                        android:id="@+id/chairmanpwd"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+				<!-- xiaoyang 会诊中隐藏主席密码-->
+                <View
+                    android:id="@+id/v_chairmanpwd"
+                    android:visibility="gone"
+                    style="@style/public_line_view" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_confuserpwd"
+                    style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/attend_password" />
+
+                    <TextView
+                        android:id="@+id/confuserpwd"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/v_confuserpwd"
+                    style="@style/public_line_view" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_sidelineuserpwd"
+                    style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/live_password" />
+
+                    <TextView
+                        android:id="@+id/sidelineuserpwd"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/v_sidelineuserpwd"
+                    style="@style/public_line_view" />
+
+                <RelativeLayout
+                    android:id="@+id/meeting_info_attend_rl"
+                    style="@style/meetinginfo_and_meetingdetails_rl" >
+
+                    <TextView
+                        style="@style/meetinginfo_and_meetingdetails_remind_tv"
+                        android:text="@string/attend_meeting_num" />
+
+                    <TextView
+                        android:id="@+id/meeting_info_attend_num_tv"
+                        style="@style/meetinginfo_and_meetingdetails_tv" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/meeting_info_line_view"
+                    style="@style/public_line_view" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

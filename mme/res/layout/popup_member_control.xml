@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/button_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/chat"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_18" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/blue" />
+
+            <TextView
+                android:id="@+id/button_change_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/change_name"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/button_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/chat"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/button_watch_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/watch_video"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/button_unwatch_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/unwatch"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/button_set_focus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/set_focus"
+                android:textSize="@dimen/text_size_20" />
+            <TextView
+                android:id="@+id/button_set_focus_sip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/set_focus_sip"
+                android:textSize="@dimen/text_size_20" />
+            <!--
+    <TextView
+        android:id="@+id/button_apply_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/apply_audio"
+        android:textSize="@dimen/text_size_20" />
+         
+
+    <TextView
+        android:id="@+id/button_as_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="@dimen/text_size_20"
+        android:text="@string/as_host" />
+
+    <TextView
+        android:id="@+id/button_cancel_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_20"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/cancel_host" />
+            -->
+
+            <TextView
+                android:id="@+id/btn_set_chairman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/str_set_chairman"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/btn_set_speaker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/str_set_speaker"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/btn_cancel_speaker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/str_cancel_speaker"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/btn_start_speak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/str_start_speak"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/btn_stop_speak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/str_stop_speak"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/btn_kick_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/kick_out"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/meetingmember_camera_user_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/meetingmember_stop_use_camera"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/txt_sip_hang_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/hang_up"
+                android:textSize="@dimen/text_size_20" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

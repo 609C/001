@@ -1,0 +1,62 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sabd="http://schemas.android.com/apk/res-auto" >
+
+    <!-- 聊天界面 -->
+    <item
+        android:id="@+id/attach_audio_call"
+        android:icon="@drawable/call2"
+        sabd:showAsAction="always"/>
+    <item
+        android:id="@+id/chat_menu_attach"
+        android:icon="@drawable/ic_ab_attach"
+        android:title="@string/Attach"
+        sabd:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/attach_photo"
+                android:icon="@drawable/ic_attach_photo"
+                android:title="@string/ChatTakePhoto"/>
+            <item
+                android:id="@+id/attach_gallery"
+                android:icon="@drawable/ic_attach_gallery"
+                android:title="@string/ChatGallery"/>
+
+            <!--
+                <item
+                android:icon="@drawable/ic_attach_video"
+                android:title="@string/ChatVideo"
+                android:id="@+id/attach_video"/>
+            -->
+
+            <item
+                android:id="@+id/attach_audio_input"
+                android:icon="@drawable/ic_attach_audio"
+                android:title="@string/AudioInput"/>
+            <item
+                android:id="@+id/attach_document"
+                android:icon="@drawable/ic_ab_doc"
+                android:title="@string/ChatDocument"/>
+            <item
+                android:id="@+id/attach_location"
+                android:icon="@drawable/ic_attach_location"
+                android:title="@string/ChatLocation"/>
+            <item
+                android:id="@+id/attach_audio_call"
+                android:icon="@drawable/ic_attach_call"
+                android:title="@string/voicechattip"/>
+            <item
+                android:id="@+id/attach_group_chat"
+                android:icon="@drawable/ic_attach_teamchat"
+                android:title="@string/CreateGroup"/>
+            <item
+                android:id="@+id/attach_remind"
+                android:icon="@drawable/eys"
+                android:title="@string/Remind"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/chat_menu_avatar"
+        sabd:actionLayout="@layout/chat_header_layout"
+        sabd:showAsAction="always"/>
+
+</menu>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PaintPad"/>          
+    <declare-styleable name="ViewPagerControl"/>         
+    <declare-styleable name="RefreshableView"/>      
+
+</resources>

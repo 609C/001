@@ -1,0 +1,17 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:background="@drawable/user_profile_item_btn"
+    android:paddingLeft="@dimen/user_profile_padding"
+    android:paddingRight="@dimen/user_profile_padding">
+
+    <TextView
+        android:id="@+id/settings_row_text"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        style="@style/mUserProfileTextStyle"/>
+
+ <include layout="@layout/diver_h"
+	     android:id="@+id/settings_row_divider"/>
+</FrameLayout>

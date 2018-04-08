@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:orientation="horizontal"
+    android:paddingBottom="1dp"
+    android:paddingTop="1dp" >
+
+    <info.emm.ui.Views.RoundBackupImageView
+        android:id="@+id/chat_group_avatar_image"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="6dp"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:id="@+id/chat_bubble_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_gravity="top"
+        android:layout_marginRight="40dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/shared_layout"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_weight="1" >
+
+            <info.emm.ui.Views.BackupImageView
+                android:id="@+id/contact_avatar"
+                android:layout_width="42dp"
+                android:layout_height="42dp" />
+
+            <TextView
+                android:id="@+id/chat_user_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_marginTop="1dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:paddingLeft="51dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/phone_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_marginTop="20dp"
+                android:maxLines="1"
+                android:paddingLeft="51dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/chat_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:textColor="#a1aab3"
+                android:textSize="12dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/add_contact_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="8dp" >
+
+            <FrameLayout
+                android:layout_width="1dp"
+                android:layout_height="54dp"
+                android:background="#e8e8e8"
+                android:paddingRight="8dp" />
+
+            <ImageView
+                android:id="@+id/add_contact_button"
+                android:layout_width="38dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="8dp"
+                android:paddingRight="4dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_ab_add_member" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+      >
+
+    <TextView
+        android:id="@+id/contactitem_catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/user_profile_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="2dip"
+        android:paddingTop="2dip"
+        android:paddingLeft="@dimen/user_profile_padding"
+        android:textColor="#ee595c61"
+        android:textSize="@dimen/text_size_12"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+         android:background="@drawable/user_profile_item_btn"
+        android:paddingLeft="@dimen/user_profile_padding"
+        android:paddingBottom="@dimen/user_head_padding"
+        android:paddingTop="@dimen/user_head_padding" >
+
+        <info.emm.ui.Views.RoundBackupImageView
+            android:id="@+id/settings_avatar_image"
+            android:layout_width="@dimen/user_head_size"
+            android:layout_height="@dimen/user_head_size"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/user_blue" />
+
+
+            <TextView
+                android:id="@+id/tv_addr_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                style="@style/mUserProfileTextStyle" />
+
+            <TextView
+                android:id="@+id/tv_addr_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/listitem_gray"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+
+        <CheckBox
+            android:id="@+id/cb_addr_sel"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginRight="15dip"
+            android:focusableInTouchMode="false"/>
+
+        <ImageView
+            android:id="@+id/cb_addr_arrowico"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dip"
+            android:src="@drawable/mm_submenu_normal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

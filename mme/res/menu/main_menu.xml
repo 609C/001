@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sabd="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/logout_menu_item"
+        sabd:actionLayout="@layout/act_menu_logout"
+        sabd:showAsAction="always"/>
+
+</menu>

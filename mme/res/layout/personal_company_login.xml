@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical" >
+
+
+    <EditText 
+        android:id="@+id/per_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="手机号码"/>
+    <EditText 
+        android:id="@+id/per_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="密码"/>
+	<TextView 
+	    android:id="@+id/resethttp"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:textSize="20sp"
+	    android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="#0899d5"
+        android:textColor="#FFFFFF"
+	    android:text="恢复设置"
+	    android:visibility="gone"/>
+
+</LinearLayout>

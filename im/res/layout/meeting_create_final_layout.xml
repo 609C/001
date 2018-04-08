@@ -1,0 +1,134 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/meet_theme_layout"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/title"
+            android:text="@string/MeetTheme" />
+        
+        <EditText
+            android:id="@+id/bubble_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColorHint="#a6a6a6"
+            android:maxLines="4"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#000000" />
+        
+    </LinearLayout>
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/dateStartTimeControls"
+        android:orientation="horizontal" >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/StartTimePicker"
+             />
+        
+        <EditText
+            android:id="@+id/selected_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            />
+        
+    </LinearLayout>
+    
+    <!-- <LinearLayout 
+        android:id="@+id/join_meeting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="gone" >
+        
+ 	    <Button
+	        android:id="@+id/join_meeting_btn"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:textSize="18sp"
+	        android:textColor="#ffffff"
+	        android:gravity="center"
+	        android:background="@drawable/regbtn_states"
+	        android:text="@string/JoinMeeting" />
+        
+    </LinearLayout> -->
+    <RelativeLayout
+        android:id="@+id/join_meeting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="gone">
+        
+        <Button
+	        android:id="@+id/join_meeting_btn"
+	        android:layout_width="120dip"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="18dp"
+	        android:textSize="18sp"
+	        android:textColor="#ffffff"
+	        android:gravity="center"
+	        android:background="@drawable/regbtn_states"
+	        android:layout_alignParentRight="true"
+	        android:text="@string/JoinMeeting"/>
+ 	    
+ 	    <Button 
+ 	        android:id="@+id/add_meet_member_btn"
+ 	        android:layout_width="120dip"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_marginLeft="16dip"
+ 	        android:textSize="18sp"
+ 	        android:textColor="#ffffff"
+ 	        android:gravity="center"
+ 	        android:background="@drawable/regbtn_states"
+ 	        android:layout_alignParentLeft="true"
+ 	        android:text="@string/AddMember"/>
+        
+    </RelativeLayout>
+    
+    <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+	        
+        <info.emm.ui.Views.PinnedHeaderListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:clipToPadding="false"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            android:paddingBottom="16dp"
+            android:scrollbars="none"/>
+        
+   	</FrameLayout>
+    
+</LinearLayout>

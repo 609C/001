@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="chat_background_color">#ffd6e4ef</color>
+    <color name="remind_Textcolor_color">#B0B0B0   </color>
+    <color name="remind_background_color">#394249  </color>
+    <color name="gallery_background_color">#ff000000</color>
+    <color name="settings_background_color">#ffffffff</color>
+    <color name="divider">#eeeeee</color>
+    <color name="black">#000000</color>
+    <color name="font_tab_unselected_color">#000000</color>
+    <color name="font_tab_selected_color">#1c94CF</color>
+    <color name="blue">#1c94CF</color>
+    <color name="convert_blue">#6495ED</color>
+
+    <!-- forum -->
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#808080</color>
+    <color name="red">#FF0000</color>
+    <color name="gold">#FFD700</color>
+    <color name="green">#008000</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="orange">#FFA500</color>
+    <color name="lemonyellow">#FFFACD</color>
+    <color name="graywhite">#F5F5F5</color>
+    <color name="grayslate">#708090</color>
+    <color name="lightblue">#0083FF</color>
+    <color name="full_transparent">#00000000</color>
+    <color name="half_transparent">#aa000000</color>
+    <color name="bright_foreground_light">#ff000000</color>
+    <color name="bright_foreground_light_inverse">#ffffffff</color>
+    <color name="bright_foreground_light_disabled">#80000000</color>
+    <color name="dim_foreground_light">#808080</color>
+    <color name="dim_foreground_light_disabled">#80323232</color>
+    <color name="dim_foreground_light_inverse">#ff006eaa</color>
+    <color name="dim_foreground_light_inverse_disabled">#80bebebe</color>
+    <color name="head_text">#0e5986</color>
+    <color name="author_text">#0e5986</color>
+    <color name="face_bg">#eef1f4</color>
+    <color name="frame_button_text_nor">#033a5c</color>
+    <color name="frame_button_text_select">#FFFFFF</color>
+    <color name="weight_bar_buttondown">#63A3D7</color>
+    <color name="weight_bar_buttonup">#A4A9AE</color>
+    <color name="listitem_transparent">#00000000</color>
+    <color name="listitem_black">#ff000000</color>
+    <color name="listitem_white">#ffffffff</color>
+    <color name="listitem_blue">#0e5986</color>
+    <color name="listitem_gray">#ff9da19e</color>
+    <color name="listitem_green">#ffe3ffc6</color>
+    <color name="listitem_greenyellow">#ff87b869</color>
+    <color name="listitem_yellow">#fffaffbf</color>
+    <color name="fff1f2f3">#fff1f2f3</color>
+    <color name="ff40ab54">#ff40ab54</color>
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="bg_light_blue">#EBF5FF</color>
+    <!-- forum -->
+
+    <color name="sidebar_color">#555555</color>
+    <color name="list_devider_color">#55808080</color>
+    <color name="transparent">#00000000</color>
+    <color name="normal_text_color">#ff353535</color>
+    <color name="bottom_dialog_bg">#f9f9f9</color>
+    <color name="dialog_up_background">#FFf0f8fc</color>
+
+    <!-- 个人详情 及 设置界面 -->
+    <color name="user_profile_bg">#ffebebeb</color>
+    <color name="diver_vertical">#9a9a9a</color>
+    <color name="main_tab_text_select">#2ab2f1</color>
+    <!-- xiaoyang -->
+    <color name="weiyi_btn_blue">#0899d5</color>
+    
+	<color name="title_bar_bg">#2bb3f1</color>
+</resources>

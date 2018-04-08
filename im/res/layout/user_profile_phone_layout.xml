@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/user_profile_item_btn"
+    android:paddingLeft="@dimen/user_profile_padding"
+    android:paddingRight="@dimen/user_profile_padding" >
+
+    <TextView
+        android:id="@+id/settings_row_text"
+        style="@style/mUserProfileTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/settings_row_text_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:textAllCaps="true"
+        android:textColor="#999999"
+        android:textSize="13dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="center_vertical" >
+
+        <View
+            android:id="@+id/call_divider"
+            android:layout_width="1dp"
+            android:layout_height="48dp"
+            android:background="#e8e8e8" />
+
+        <ImageButton
+            android:id="@+id/settings_call"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/list_selector"
+            android:clickable="true"
+            android:src="@drawable/call" />
+
+        <View
+            android:id="@+id/send_msg_divider"
+            android:layout_width="1dp"
+            android:layout_height="48dp"
+            android:background="#e8e8e8" />
+
+        <ImageButton
+            android:id="@+id/settings_edit_name"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/list_selector"
+            android:clickable="true"
+            android:src="@drawable/ic_profile_send_message" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/settings_row_divider"
+        layout="@layout/diver_h" />
+
+</FrameLayout>

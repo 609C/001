@@ -1,0 +1,15 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/unreadtext"
+    android:layout_width="wrap_content"
+    android:layout_height="19dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="5dp"
+    android:background="@color/red"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:textSize="@dimen/text_size_13"
+    android:textStyle="bold"
+    android:visibility="gone"/>
+

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+    <RelativeLayout 
+        android:id="@+id/video_conter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4F4F4F">        
+	    <info.emm.sdk.VideoView
+	        android:id="@+id/broadcast_view_watch"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="invisible"/>
+	    
+	    
+	    
+	    <FrameLayout 
+            android:id="@+id/broadcast_content_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+            
+        </FrameLayout>
+        <ImageView
+	        android:id="@+id/img_broad_switch_audio"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="left"
+	        android:layout_margin="20dp"
+	        android:src="@drawable/voice_out" />
+   		<TextView 
+	        android:id="@+id/txt_no_live"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="@string/str_wait_for_syncvideo"
+	        android:textColor="#FFFFFF"/>
+		<LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="#702f3a45">
+		    
+            <ImageView
+                android:id="@+id/img_online_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/img_online_num" />
+            <TextView 
+                android:id="@+id/txt_online_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:gravity="center_vertical"/>
+		</LinearLayout>
+    </RelativeLayout>
+    <LinearLayout 
+        android:id="@+id/broad_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/video_conter"
+        android:background="@null">
+        <LinearLayout 
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@null">
+            <TextView 
+                android:id="@+id/txt_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chat"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:background="@null"
+                android:textColor="#FFFFFF"/>
+            <TextView 
+                android:id="@+id/txt_whitepad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ppt"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:background="@null"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <View 
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#8E8E8E"/>
+        <FrameLayout 
+            android:id="@+id/broadcast_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3C3C3C">
+            
+        </FrameLayout>
+    </LinearLayout>
+	<TextView 
+	    android:id="@+id/txt_meetingid"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:maxLines="1"
+        android:shadowColor="#40000000"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="1"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+</RelativeLayout>

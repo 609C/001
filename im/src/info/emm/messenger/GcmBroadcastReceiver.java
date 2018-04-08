@@ -1,0 +1,102 @@
+/*
+ * This is the source code of Emm for Android v. 1.3.2.
+ * It is licensed under GNU GPL v. 2 or later.
+ * You should have received a copy of the license in this archive (see LICENSE).
+ *
+ * Copyright Nikolai Kudashov, 2013.
+ */
+
+package info.emm.messenger;
+
+import info.emm.ui.ApplicationLoader;
+import info.emm.utils.Utilities;
+import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.os.PowerManager;
+
+import org.json.JSONObject;
+
+public class GcmBroadcastReceiver extends BroadcastReceiver {
+
+    public static final int NOTIFICATION_ID = 1;
+    private static PowerManager.WakeLock wakeLock = null;
+    private static final Integer sync = 1;
+
+    @Override
+    public void onReceive(final Context context, final Intent intent) {
+        FileLog.d("emm", "GCM received intent: " + intent);
+
+        if (intent.getAction().equals("com.google.android.c2dm.intent.RECEIVE")) {
+            synchronized (sync) {
+                try {
+                    if (wakeLock == null) {
+                        PowerManager pm = (PowerManager)context.getSystemService(Context.POWER_SERVICE);
+                        wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "lock");
+                    }
+                    if (!wakeLock.isHeld()) {
+                        wakeLock.acquire(5000);
+                    }
+                } catch (Exception e) {
+                    try {
+                        if (wakeLock != null) {
+                            wakeLock.release();
+                        }
+                    } catch (Exception e2) {
+                        FileLog.e("emm", e2);
+                    }
+                    FileLog.e("emm", e);
+                }
+            }
+
+            AwakeService.startService();
+
+            Utilities.RunOnUIThread(new Runnable() {
+                @Override
+                public void run() {
+                    ApplicationLoader.postInitApplication();
+
+                    try {
+                        String key = intent.getStringExtra("loc_key");
+                        if ("DC_UPDATE".equals(key)) {
+                            String data = intent.getStringExtra("custom");
+                            JSONObject object = new JSONObject(data);
+                            int dc = object.getInt("dc");
+                            String addr = object.getString("addr");
+                            String[] parts = addr.split(":");
+                            if (parts.length != 2) {
+                                return;
+                            }
+                            String ip = parts[0];
+                            int port = Integer.parseInt(parts[1]);
+                            ConnectionsManager.getInstance().applyDcPushUpdate(dc, ip, port);
+                        }
+                    } catch (Exception e) {
+                        FileLog.e("emm", e);
+                    }
+
+                    /*SharedPreferences preferences = context.getSharedPreferences("Notifications", Context.MODE_PRIVATE);
+                    boolean globalEnabled = preferences.getBoolean("EnableAll", true);
+                    if (!globalEnabled) {
+                        FileLog.d("emm", "GCM disabled");
+                        return;
+                    }*/
+
+                    ConnectionsManager.getInstance().resumeNetworkMaybe();
+                }
+            });
+        } else if (intent.getAction().equals("com.google.android.c2dm.intent.REGISTRATION")) {
+            String registration = intent.getStringExtra("registration_id");
+            if (intent.getStringExtra("error") != null) {
+                FileLog.e("emm", "Registration failed, should try again later.");
+            } else if (intent.getStringExtra("unregistered") != null) {
+                FileLog.e("emm", "unregistration done, new messages from the authorized sender will be rejected");
+            } else if (registration != null) {
+                FileLog.e("emm", "registration id = " + registration);
+            }
+        }
+
+        setResultCode(Activity.RESULT_OK);
+    }
+}

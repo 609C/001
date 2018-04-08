@@ -1,0 +1,119 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    
+    <RelativeLayout 
+        android:id="@+id/meeting_in_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+    	<RelativeLayout 
+    	    android:id="@+id/speak_palyer_img_layout"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_marginBottom="10dp">
+    	    
+    	    <RelativeLayout 
+    	        android:id="@+id/mic_speaker_layout"
+    	        android:layout_width="match_parent"
+    	        android:layout_height="wrap_content">
+    	        
+    	        <Button
+	    	        android:id="@+id/mic_img"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:drawableTop="@drawable/mic_open"
+	    	        android:gravity="center_vertical|center_horizontal"
+	    	        android:text="@string/Mic"
+	    	        android:layout_alignParentLeft="true"
+	    	        android:layout_marginLeft="20dp"
+	    	        android:background="#00000000" />
+	    	    
+	    	    <Button  
+	    	        android:id="@+id/speaker_img"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	     	android:drawableTop="@drawable/speaker_open"
+	    	     	android:gravity="center_vertical|center_horizontal"
+	    	     	android:text="@string/Speaker"
+	    	     	android:layout_alignParentRight="true"
+	    	     	android:layout_marginRight="20dp"
+	    	     	android:background="#00000000" />
+    	        
+    	    </RelativeLayout>
+    	    
+    	    
+			<RelativeLayout
+			    android:id="@+id/quit_meeting_layout"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="10dp"
+			    android:layout_below="@id/mic_speaker_layout">
+			    
+			    <Button 
+			        android:id="@+id/quit_meet_btn"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/QuitMeeting"
+			        android:layout_marginLeft="20dp"
+			        android:layout_marginRight="20dp"
+			        android:textSize="18sp"
+			        android:background="@drawable/quitbtn_states" />
+			    
+			</RelativeLayout>			
+    	</RelativeLayout>
+    	
+    	
+		<LinearLayout
+	        android:id="@+id/test"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:gravity="top"
+	        android:orientation="vertical"	        
+	        android:layout_above="@id/speak_palyer_img_layout" >
+			<ListView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/in_meeting_list_member"
+		        android:clipToPadding="false"
+		        android:fadingEdge="none"
+		        android:fadingEdgeLength="0dp"
+		        android:divider="@drawable/messages_list_divider"
+		    	android:dividerHeight="1px"
+		        android:fastScrollEnabled="true"    
+		        android:scrollbarStyle="outsideOverlay"
+		        />
+			
+	    	<ListView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/out_meeting_list_member"
+		        android:clipToPadding="false"
+		        android:fadingEdge="none"		        
+		        android:fadingEdgeLength="0dp"
+		        android:divider="@drawable/messages_list_divider"
+		    	android:dividerHeight="1px"
+		        android:fastScrollEnabled="true"    
+		        android:scrollbarStyle="outsideOverlay"/>
+	    	
+	    	
+	    	
+    	</LinearLayout>
+    	
+    	<LinearLayout
+	        android:id="@+id/progressLayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:gravity="center"
+	        android:orientation="vertical"
+	        android:visibility="gone" >
+	
+	        <ProgressBar
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+	    </LinearLayout>    	
+    </RelativeLayout>
+</FrameLayout>

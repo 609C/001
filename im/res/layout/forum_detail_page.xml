@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/question_detail_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="6.0dip"
+            android:layout_marginTop="10.0dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="6.0dip"
+            android:layout_marginTop="6.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/forum_detail_userface"
+                    style="@style/user_face_image"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/question_detail_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/author_text"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/question_detail_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_size_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/widget_comment_count_icon" />
+
+                <TextView
+                    android:id="@+id/question_detail_comment_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6.0dip"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_size_13" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/detail_cut_line" />
+
+        <TextView
+            android:id="@+id/forum_detail_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="10.0dip"
+            android:textSize="@dimen/text_size_16" />
+
+        <android.support.v7.widget.GridLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/forum_detail_content_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="5dip"
+            app:columnCount="3" >
+
+            <ImageView
+                android:id="@+id/forum_detail_image_01"
+                style="@style/user_comment_image"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/forum_detail_image_02"
+                style="@style/user_comment_image"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/forum_detail_image_03"
+                style="@style/user_comment_image"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/forum_detail_image_04"
+                style="@style/user_comment_image"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/forum_detail_image_05"
+                style="@style/user_comment_image"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/forum_detail_image_06"
+                style="@style/user_comment_image"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/forum_detail_image_07"
+                style="@style/user_comment_image"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/forum_detail_image_08"
+                style="@style/user_comment_image"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/forum_detail_image_09"
+                style="@style/user_comment_image"
+                android:visibility="gone" />
+        </android.support.v7.widget.GridLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:paddingLeft="@dimen/user_profile_padding"
+    android:paddingRight="@dimen/user_profile_padding">
+
+    <TextView
+        android:id="@+id/settings_row_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/user_profile_padding"
+        android:background="@drawable/logout_button_states"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp" />
+
+</FrameLayout>

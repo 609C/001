@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_margin="20dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/mobile_unbind_icon" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/PhoneUnlinkNotic1"
+            android:textSize="@dimen/text_size_16" 
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/PhoneUnlinkNotic2"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_contact"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/account_change_btn"
+            android:gravity="center"
+            android:text="@string/MobileContacts"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_change"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/AccountTvBtnStyle"
+            android:text="@string/Unlink"  />
+
+        <TextView
+            android:id="@+id/tv_link"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/AccountTvBtnStyle"
+            android:text="@string/PhoneLink" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>

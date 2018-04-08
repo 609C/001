@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF3F4" >
+
+    <LinearLayout
+        android:id="@+id/lin_pri_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#D6DBDE" />
+
+        <EditText
+            android:id="@+id/pri_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:hint="@string/com_user_account"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:singleLine="true" />
+		<View 
+		    android:layout_width="match_parent"
+		    android:layout_height="1px"
+		    android:background="#ececec"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"/>
+        <EditText
+            android:id="@+id/pri_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:hint="@string/Password"
+            android:inputType="textPassword"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:singleLine="true" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#D6DBDE" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/txt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin_pri_top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#2AB2F1"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</RelativeLayout>

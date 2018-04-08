@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp" >
+
+    <RelativeLayout
+        android:id="@+id/main_tab_meeting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tab_text_Meeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:drawableTop="@drawable/bottom_tab_meetings_bg"
+            android:gravity="center_horizontal"
+            android:text="@string/Meeting"
+            android:textColor="@color/selector_tabtext" />
+
+        <include layout="@layout/unread_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_tab_direct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tab_text_direct_sending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:drawableTop="@drawable/bottom_tab_broadcast_bg"
+            android:gravity="center_horizontal"
+            android:text="@string/direct_sending"
+            android:textColor="@color/selector_tabtext" />
+
+        <include layout="@layout/unread_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_tab_contacts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tab_text_Contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:drawableTop="@drawable/bottom_tab_contacts_bg"
+            android:gravity="center_horizontal"
+            android:text="@string/Contacts"
+            android:textColor="@color/selector_tabtext" />
+
+        <include layout="@layout/unread_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_tab_chats"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tab_text_Chats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:drawableTop="@drawable/bottom_tab_chats_bg"
+            android:gravity="center_horizontal"
+            android:text="@string/Chats"
+            android:textColor="@color/selector_tabtext" />
+
+        <TextView
+            android:id="@+id/unreadtext"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="2dp"
+             android:layout_toLeftOf="@+id/tab_text_Chats"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/red"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13"
+            android:textStyle="bold"
+            android:visibility="gone" />
+ 
+        <!-- <include layout="@layout/unread_bg"/> -->
+    </RelativeLayout>
+
+</LinearLayout>

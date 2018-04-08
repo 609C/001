@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#2AB2F1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/user_profile_padding"
+    android:paddingRight="@dimen/user_profile_padding"
+    android:paddingTop="@dimen/user_profile_padding">
+
+    <FrameLayout
+        android:layout_width="@dimen/head_size_default"
+        android:layout_height="@dimen/head_size_default" >
+
+        <info.emm.ui.Views.RoundBackupImageView
+            android:id="@+id/settings_avatar_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ImageButton
+            android:id="@+id/settings_change_avatar_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="28dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/settings_name"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:ellipsize="end"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textSize="21dp" />
+
+        <TextView
+            android:id="@+id/settings_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <!--
+    <View
+         android:id="@+id/divider"
+        android:background="@color/diver_vertical"
+        android:layout_width="1px"
+        android:layout_height="48dp"/>
+
+    <ImageButton
+        android:id="@+id/settings_edit_name"
+        android:background="@drawable/list_selector"
+        android:clickable="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_edit"/>
+    -->
+
+</LinearLayout>

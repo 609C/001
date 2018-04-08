@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_create_meeting"
+            style="@style/mTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/create_new_object"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/meeting_hold" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/meeting_relyout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+		
+	    <ListView
+	        android:id="@+id/meeting_list_view"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_alignParentTop="true"
+	        android:clipToPadding="false"
+	        android:divider="@drawable/contacts_list_divider"
+	        android:dividerHeight="1px"
+	        android:fadingEdge="none"
+	        android:fadingEdgeLength="0dp"
+	        android:fastScrollEnabled="true"
+	        android:scrollbarStyle="outsideOverlay" />
+
+	    <!-- android:layout_above="@id/meeting_linyout"-->
+	        <!-- android:layout_above="@id/meeting_linyout"/>-->
+
+	    <LinearLayout
+	        android:id="@+id/layout_meetting_notic"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical"
+	        android:visibility="gone" >
+
+	        <TextView
+	            android:id="@+id/meetting_list_searchEmptyView"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:gravity="center"
+	            android:text="@string/NoMeeting"
+	             android:textColor="#959595"
+	            android:textSize="24sp"
+	            />
+
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#959595"
+	            android:textSize="15sp"
+	            android:paddingTop="6dp"
+	            android:lineSpacingExtra="2dp"
+	            android:text="@string/NoMeetingHelp" />
+
+	    </LinearLayout>
+    
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/toptext"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="#50ffffff"
+        android:gravity="center"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:textColor="@color/public_black_6"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/week_ll"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_below="@id/toptext"
+        android:background="#ff8091a8" >
+
+        <TextView
+            style="@style/weekName"
+            android:text="@string/sunday_text" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="@string/monday_text" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="@string/tuesday_text" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="@string/wednesday_text" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="@string/thursday_text" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="@string/friday_text" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="@string/saturday_text" />
+    </LinearLayout>
+
+    <com.main.mme.view.StickyLayout
+        android:id="@+id/sticky_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/week_ll"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/sticky_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ViewFlipper
+                android:id="@+id/flipper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <View style="@style/public_line_view_in_rangmeeting" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sticky_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.meeting.ui.RefreshableView
+                android:id="@+id/refreshable_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <com.main.mme.view.PinnedHeaderExpandableListView
+                    android:id="@+id/list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:listSelector="@android:color/transparent" >
+                </com.main.mme.view.PinnedHeaderExpandableListView>
+            </com.meeting.ui.RefreshableView>
+        </LinearLayout>
+    </com.main.mme.view.StickyLayout>
+
+</RelativeLayout>

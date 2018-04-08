@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sabd="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/messages_list_menu_post_forum"
+        android:icon="@drawable/ic_done"
+        android:title="@string/NewForum"
+        sabd:showAsAction="always"/>
+
+</menu>

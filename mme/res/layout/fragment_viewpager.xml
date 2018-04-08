@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.meeting.ui.ViewPagerControl
+            android:id="@+id/vPager_meeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_tab_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/face_meeting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#10000000" />
+
+        <LinearLayout
+            android:id="@+id/bottom_btns"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="#702f3a45"
+            android:baselineAligned="false"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/button_audio"
+                style="@style/viewpager_bottom_rl" >
+
+                <ImageView
+                    android:id="@+id/img_audio"
+                    style="@style/viewpager_bottom_iv"
+                    android:src="@drawable/button_audio" />
+
+                <TextView
+                    android:id="@+id/tab_audio"
+                    style="@style/viewpager_bottom_tv"
+                    android:layout_below="@id/img_audio"
+                    android:text="@string/audio" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/button_video"
+                style="@style/viewpager_bottom_rl" >
+
+                <ImageView
+                    android:id="@+id/img_video"
+                    style="@style/viewpager_bottom_iv"
+                    android:src="@drawable/button_video" />
+
+                <TextView
+                    android:id="@+id/tab_video"
+                    style="@style/viewpager_bottom_tv"
+                    android:layout_below="@id/img_video"
+                    android:text="@string/tab_video" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/button_member"
+                style="@style/viewpager_bottom_rl" >
+
+                <ImageView
+                    android:id="@+id/img_member"
+                    style="@style/viewpager_bottom_iv"
+                    android:src="@drawable/button_membe" />
+
+                <TextView
+                    android:id="@+id/tab_member"
+                    style="@style/viewpager_bottom_tv"
+                    android:layout_below="@id/img_member"
+                    android:text="@string/tab_members" >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/button_message"
+                style="@style/viewpager_bottom_rl" >
+
+                <ImageView
+                    android:id="@+id/img_message"
+                    style="@style/viewpager_bottom_iv"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/button_messagesbt" />
+
+                <TextView
+                    android:id="@+id/tab_message"
+                    style="@style/viewpager_bottom_tv"
+                    android:layout_below="@id/img_message"
+                    android:text="@string/str_message" >
+                </TextView>
+                <!--
+                <include
+                    layout="@layout/unread_bg" />                -->
+
+                <TextView
+                    android:id="@+id/unreadtext"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_toRightOf="@id/img_message"
+                    android:background="@drawable/unread_round"
+                    android:gravity="center"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_13"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/button_share"
+                style="@style/viewpager_bottom_rl" >
+
+                <ImageView
+                    android:id="@+id/img_share"
+                    style="@style/viewpager_bottom_iv"
+                    android:src="@drawable/button_shared" />
+
+                <TextView
+                    android:id="@+id/tab_share"
+                    style="@style/viewpager_bottom_tv"
+                    android:layout_below="@id/img_share"
+                    android:text="@string/tab_share" >
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rly_connecting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#55000000" >
+
+            <TextView
+                android:id="@+id/textView_connecting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/connecting"
+                android:textColor="@color/white" />
+
+            <ProgressBar
+                android:id="@+id/progressBar_connecting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/textView_connecting" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#2AB2F1" >
+
+            <TextView
+                android:id="@+id/text_view_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/h_view_page"
+                android:textColor="@color/red"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_exitmeeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/tittlebar_back" />
+
+            <TextView
+                android:id="@+id/text_meeting_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/img_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:src="@drawable/ic_ab_other" />
+
+            <RelativeLayout
+                android:id="@+id/rel_lis_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/txt_lis_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/groupchat"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <include
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    layout="@layout/unread_bg" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/tv_switch_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_camera"
+                android:paddingRight="20dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/viewpager_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</RelativeLayout>

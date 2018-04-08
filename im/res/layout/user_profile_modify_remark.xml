@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingLeft="@dimen/user_profile_padding"
+    android:paddingRight="@dimen/user_profile_padding"
+    android:background="@drawable/user_profile_item_btn">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/mUserProfileTextStyle"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/user_profile_remark" />
+
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_16" />
+	<View
+         android:id="@+id/divider"
+          android:layout_width="1dp"
+ 		    android:layout_height="48dp"
+ 		    android:background="#e8e8e8" />
+  	<ImageButton
+        android:id="@+id/btn_modify"
+        android:clickable="true"
+        android:background="@drawable/list_selector"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_edit"
+         />
+    </LinearLayout>
+
+   	<include layout="@layout/diver_h"
+	     android:id="@+id/settings_row_divider"/>
+
+</LinearLayout>

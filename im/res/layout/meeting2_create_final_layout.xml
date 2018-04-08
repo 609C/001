@@ -1,0 +1,115 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/meet_theme_layout"
+        android:orientation="vertical">
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/title2"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:text="@string/meeting_members" />
+        
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/title3"
+            android:text="@string/MeetTheme" />
+        
+        <EditText
+            android:id="@+id/bubble_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColorHint="#a6a6a6"
+            android:maxLines="4"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:text=""/>
+        <TextView
+            android:id="@+id/tv_savetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:text=""/>
+
+
+    </LinearLayout>
+    
+        <info.emm.ui.Views.PinnedHeaderListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_appointment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="预约会议"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_endmeeting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logout_button_states"
+                android:text="@string/meeting_end" 
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_realtime"
+                android:background="@drawable/logout_button_states"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/meeting_start"/>
+
+        </LinearLayout>
+    
+</LinearLayout>

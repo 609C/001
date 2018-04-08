@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingTop="8dip"
+    android:paddingBottom="8dip">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+		<!-- android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp" -->
+        <ImageView
+            android:id="@+id/meeting_icon"
+           	android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:background="@drawable/meetingicon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp" >
+            
+			<RelativeLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    >
+			    
+			    <TextView
+	                android:id="@+id/meeting_name"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="16sp" />
+			    
+			    <TextView
+			        android:id="@+id/meeting_time_format"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_marginTop="3dp" />
+
+			</RelativeLayout>
+			
+			<RelativeLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_marginTop="5dp">
+			    
+			    <TextView
+	                android:id="@+id/meeting_starttime_hostname"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+					android:textSize="14sp" 
+					/>
+			    
+			    <TextView 
+			        android:id="@+id/meeting_new_msg"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:background="@drawable/dialogs_badge"
+			        android:gravity="center_vertical|center_horizontal"
+			        android:textColor="#F8F8FF"
+			        android:textSize="8sp"
+			        android:visibility="visible"
+			        android:text="NEW" />
+			    <!-- android:layout_marginBottom="2dp" -->
+			</RelativeLayout>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

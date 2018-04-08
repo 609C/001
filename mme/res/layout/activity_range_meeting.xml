@@ -1,0 +1,243 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="info.emm.messenger.RangeMeetingActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/rangemeeting_ll" >
+
+                <ImageView
+                    style="@style/rangemeeting_iv"
+                    android:src="@drawable/img_meetingtopic" />
+
+                <TextView
+                    android:id="@+id/Meeting_Title"
+                    style="@style/rangemeeting_tv"
+                    android:text="@string/meetingtopic" />
+
+                <EditText
+                    android:id="@+id/editText_meetingtopic"
+                    style="@style/rangemeeting_right_layout"
+                    android:background="@null"
+                    android:singleLine="true" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <View style="@style/public_line_view_in_rangmeeting" />
+
+            <LinearLayout
+                android:id="@+id/rangemeeting_repeat_ll"
+                style="@style/rangemeeting_ll" >
+
+                <ImageView
+                    style="@style/rangemeeting_iv"
+                    android:src="@drawable/img_meeting_repeat" />
+
+                <TextView
+                    android:id="@+id/Meeting_repeat"
+                    style="@style/rangemeeting_tv"
+                    android:text="@string/meetingrepeat" />
+
+                <TextView
+                    android:id="@+id/editText_repeat"
+                    style="@style/rangemeeting_right_layout" />
+            </LinearLayout>
+
+            <View style="@style/public_line_view_in_rangmeeting" />
+
+            <LinearLayout
+                android:id="@+id/startdate_ll"
+                style="@style/rangemeeting_ll" >
+
+                <ImageView
+                    style="@style/rangemeeting_iv"
+                    android:src="@drawable/img_startdate" />
+
+                <TextView
+                    android:id="@+id/txt_startdate"
+                    style="@style/rangemeeting_tv"
+                    android:text="@string/startdate" />
+
+                <TextView
+                    android:id="@+id/editText_startdate"
+                    style="@style/rangemeeting_right_layout" />
+            </LinearLayout>
+
+            <View style="@style/public_line_view_in_rangmeeting" />
+
+            <LinearLayout style="@style/rangemeeting_ll" >
+
+                <ImageView
+                    style="@style/rangemeeting_iv"
+                    android:src="@drawable/img_starttime" />
+
+                <TextView
+                    android:id="@+id/txt_starttime"
+                    style="@style/rangemeeting_tv"
+                    android:text="@string/starttime" />
+
+                <TextView
+                    android:id="@+id/editText_starttime"
+                    style="@style/rangemeeting_right_layout" />
+            </LinearLayout>
+
+            <View style="@style/public_line_view_in_rangmeeting" />
+
+            <LinearLayout style="@style/rangemeeting_ll" >
+
+                <ImageView
+                    style="@style/rangemeeting_iv"
+                    android:src="@drawable/img_endtime" />
+
+                <TextView
+                    android:id="@+id/txt_endtime"
+                    style="@style/rangemeeting_tv"
+                    android:text="@string/meet_time" />
+
+                <TextView
+                    android:id="@+id/editText_endtime"
+                    style="@style/rangemeeting_right_layout" />
+            </LinearLayout>
+
+            <View style="@style/public_line_view_in_rangmeeting" />
+
+            <LinearLayout
+                android:id="@+id/rangemeeting_attend_ll"
+                style="@style/rangemeeting_ll"
+                android:visibility="gone" >
+
+                <ImageView
+                    style="@style/rangemeeting_iv"
+                    android:src="@drawable/img_attend_meeting" />
+
+                <TextView
+                    android:id="@+id/rangemeeting_attend_tv"
+                    style="@style/rangemeeting_tv"
+                    android:text="@string/attend_meeting_member" />
+
+                <TextView
+                    android:id="@+id/rangemeeting_attend_num_tv"
+                    style="@style/rangemeeting_right_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rangemeeting_chairman_pwd_ll"
+                style="@style/rangemeeting_ll" >
+
+                <ImageView
+                    style="@style/rangemeeting_iv"
+                    android:src="@drawable/password" />
+
+                <TextView
+                    android:id="@+id/rangemeeting_chairman_pwd_tv"
+                    style="@style/rangemeeting_tv"
+                    android:text="@string/chairman_password" />
+
+                <EditText
+                    android:id="@+id/rangemeeting_chairman_pwd_num_tv"
+                    style="@style/rangemeeting_right_layout"
+                    android:background="@null" />
+            </LinearLayout>
+
+            <View style="@style/public_line_view_in_rangmeeting" />
+
+            <LinearLayout
+                android:id="@+id/rangemeeting_attend_pwd_ll"
+                style="@style/rangemeeting_ll" >
+
+                <ImageView
+                    style="@style/rangemeeting_iv"
+                    android:src="@drawable/password" />
+
+                <TextView
+                    android:id="@+id/rangemeeting_attend_pwd_tv"
+                    style="@style/rangemeeting_tv"
+                    android:text="@string/attend_password" />
+
+                <EditText
+                    android:id="@+id/rangemeeting_attend_num_et"
+                    style="@style/rangemeeting_right_layout"
+                    android:background="@null"
+                    android:hint="@string/choose_et"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <View style="@style/public_line_view_in_rangmeeting" />
+
+            <LinearLayout
+                android:id="@+id/rangemeeting_live_pwd_ll"
+                style="@style/rangemeeting_ll" >
+
+                <ImageView
+                    style="@style/rangemeeting_iv"
+                    android:src="@drawable/password" />
+
+                <TextView
+                    android:id="@+id/rangemeeting_live_pwd_tv"
+                    style="@style/rangemeeting_tv"
+                    android:text="@string/live_password" />
+
+                <EditText
+                    android:id="@+id/rangemeeting_live_pwd_num_et"
+                    style="@style/rangemeeting_right_layout"
+                    android:background="@null"
+                    android:hint="@string/choose_et"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <View style="@style/public_line_view_in_rangmeeting" />
+
+            <RelativeLayout
+                android:id="@+id/rangemeeting_ispublish_ll"
+                style="@style/rangemeeting_ll" >
+
+                <ImageView
+                    android:id="@+id/rangemeeting_ispublish"
+                    style="@style/rangemeeting_iv"
+                    android:src="@drawable/img_ispublish" />
+
+                <TextView
+                    android:id="@+id/rangemeeting_ispublish_tv"
+                    style="@style/rangemeeting_tv"
+                    android:layout_toRightOf="@id/rangemeeting_ispublish"
+                    android:text="@string/meeting_ispublish" />
+
+                <ImageView
+                    android:id="@+id/rangemeeting_ispublish_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/switch_on1" />
+            </RelativeLayout>
+
+            <View style="@style/public_line_view_in_rangmeeting" />
+
+            <TextView
+                android:id="@+id/btn_rangmeeting"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="#2AB2F1"
+                android:gravity="center"
+                android:text="@string/range"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

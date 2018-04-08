@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/user_profile_item_btn"
+    android:paddingLeft="@dimen/user_profile_padding"
+    android:paddingRight="@dimen/user_profile_padding" >
+
+    <TextView
+        android:id="@+id/settings_row_text"
+        android:layout_width="wrap_content"
+         style="@style/mUserProfileTextStyle"
+        android:gravity="center_vertical"
+         />
+
+    <ImageView
+        android:layout_gravity="center_vertical|right"
+        android:id="@+id/settings_row_check_button"
+        android:duplicateParentState="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_check_on"/>
+
+	<include layout="@layout/diver_h"
+	     android:id="@+id/settings_row_divider"/>
+</FrameLayout>
