@@ -1,1 +1,1 @@
-include ':OutInterFace', ':sdktest_android', ':mme', ':WhitePad', ':library', ':im', ':MQ'
+include ':app',':OutInterFace', ':sdktest_android', ':mme', ':WhitePad', ':library', ':im', ':MQ'
