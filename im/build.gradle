@@ -6,7 +6,6 @@ dependencies {
     compile fileTree(include: '*.jar', dir: 'libs')
     compile project(':library')
     compile project(':mme')
-    compile 'com.github.609C:WeiYi_IM:V1.0.4'
 }
 
 android {

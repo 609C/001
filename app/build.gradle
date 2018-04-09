@@ -34,6 +34,6 @@ dependencies {
 //        compile(name:'im-release', ext:'aar')
 //    compile 'com.github.609C:WeiYi_IM:V1.0.1'
 
-//    compile project(':im')
+    compile project(':im')
 
 }
